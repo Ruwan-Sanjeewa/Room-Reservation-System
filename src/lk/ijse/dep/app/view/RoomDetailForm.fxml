@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="roomDetails" prefHeight="560.0" prefWidth="890.0" style="-fx-background-image: url('/lk/ijse/dep/app/assets/background4.jpg'); -fx-background-size: cover" stylesheets="@style/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.app.controller.RoomDetailFormController">
+   <children>
+      <TableView id="tblAddRoom" fx:id="tbl_ViewRooms" layoutX="33.0" layoutY="98.0" prefHeight="441.0" prefWidth="837.0">
+         <columns>
+            <TableColumn prefWidth="124.0" text="Room Type" />
+            <TableColumn prefWidth="461.0" text="Description" />
+            <TableColumn prefWidth="249.0" text="Price" />
+         </columns>
+      </TableView>
+      <Button layoutX="33.0" layoutY="25.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="57.0" prefWidth="83.0" style="-fx-background-color:transparent;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#3898d3" height="6.0" layoutX="74.0" layoutY="52.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="31.0" />
+      <ImageView disable="true" fitHeight="51.0" fitWidth="54.0" layoutX="38.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

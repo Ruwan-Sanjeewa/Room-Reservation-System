@@ -1,0 +1,8 @@
+*.log
+*.lck
+*.iml
+*.xml
+.idea/**
+*.class
+node_modules/**
+out/**

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rooms" prefHeight="560.0" prefWidth="890.0" style="-fx-background-image: url('/lk/ijse/dep/app/assets/background2.jpg'); -fx-background-size: cover" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.app.controller.RoomsFormController">
+   <children>
+      <JFXButton buttonType="RAISED" layoutX="346.0" layoutY="106.0" onAction="#btnViewRoomDetails_OnAction" prefHeight="83.0" prefWidth="198.0" style="-fx-background-color: #66ccff;" text="View Room Details" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="346.0" layoutY="212.0" onAction="#btnAddRooms_OnAction" prefHeight="83.0" prefWidth="198.0" style="-fx-background-color: #ff5c33;" text="Add Rooms" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="346.0" layoutY="323.0" onAction="#btnAddRoomTypes_OnAction" prefHeight="83.0" prefWidth="198.0" style="-fx-background-color: #4dff4d;" text="Add Room Types" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <Button layoutX="30.0" layoutY="29.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="57.0" prefWidth="83.0" style="-fx-background-color:transparent;" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#3898d3" height="6.0" layoutX="71.0" layoutY="56.0" stroke="WHITE" strokeType="INSIDE" width="31.0" />
+      <ImageView disable="true" fitHeight="51.0" fitWidth="54.0" layoutX="35.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assets/back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

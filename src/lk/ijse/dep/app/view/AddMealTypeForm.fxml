@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="addRooms" fx:id="addMealType" prefHeight="560.0" prefWidth="890.0" style="-fx-background-image: url('/lk/ijse/dep/app/assets/background1.png'); -fx-background-size: cover" stylesheets="@style/TableStyle.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dep.app.controller.AddMealTypeFormController">
+    <children>
+        <JFXTextField fx:id="txt_MealTypeId" labelFloat="true" layoutX="70.0" layoutY="108.0" prefHeight="31.0" prefWidth="326.0" promptText="Meal Type ID" unFocusColor="BLACK">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></JFXTextField>
+        <JFXTextField fx:id="txt_MealTypeName" labelFloat="true" layoutX="491.0" layoutY="108.0" prefHeight="31.0" prefWidth="326.0" promptText="Meal Type Name">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></JFXTextField>
+        <JFXTextField fx:id="txt_Price" labelFloat="true" layoutX="70.0" layoutY="180.0" prefHeight="31.0" prefWidth="326.0" promptText="Price">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font></JFXTextField>
+        <TableView id="tblAddRoom" fx:id="tbl_MealType" layoutX="57.0" layoutY="301.0" prefHeight="231.0" prefWidth="806.0">
+            <columns>
+                <TableColumn prefWidth="216.0" text="Meal Type ID" />
+                <TableColumn prefWidth="399.0" text="Meal Type Name" />
+                <TableColumn prefWidth="187.0" text="Price" />
+            </columns>
+        </TableView>
+        <JFXButton fx:id="btn_Add" buttonType="RAISED" layoutX="57.0" layoutY="249.0" onAction="#btnAdd_OnAction" prefHeight="31.0" prefWidth="83.0" style="-fx-background-color: #cada3c;" text="      Add" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="70.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/plus.png" />
+            </image>
+        </ImageView>
+        <JFXButton buttonType="RAISED" layoutX="167.0" layoutY="249.0" onAction="#btnRemove_OnAction" prefHeight="20.0" prefWidth="105.0" style="-fx-background-color: #ea5050;" text="     Remove" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </JFXButton>
+        <ImageView disable="true" fitHeight="20.0" fitWidth="20.0" layoutX="179.0" layoutY="255.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/minus.png" />
+            </image>
+        </ImageView>
+        <Button layoutX="25.0" layoutY="14.0" mnemonicParsing="false" onAction="#btnBack_OnAction" prefHeight="57.0" prefWidth="83.0" style="-fx-background-color:transparent;" />
+        <Rectangle arcHeight="5.0" arcWidth="5.0" disable="true" fill="#3898d3" height="6.0" layoutX="66.0" layoutY="41.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="31.0" />
+        <ImageView disable="true" fitHeight="51.0" fitWidth="54.0" layoutX="30.0" layoutY="18.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../assets/back.png" />
+            </image>
+        </ImageView>
+    </children>
+</AnchorPane>

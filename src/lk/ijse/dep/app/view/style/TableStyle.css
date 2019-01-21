@@ -1,0 +1,20 @@
+.table-row-cell:selected{
+    -fx-background-color:linear-gradient(from 0% 0% to 100% 100%, white 0%, #8cff1a 50%, white 100%);
+}
+
+.table-row-cell:selected .table-cell{
+    -fx-text-fill: black !important;
+    -fx-font-weight: bold;
+    -fx-alignment:CENTER;
+}
+.table-row-cell{
+    -fx-background-color:transparent;
+    -fx-font-weight: bold;
+}
+
+.table-view .table-cell{
+    -fx-alignment:CENTER;
+}
+.table-view{
+    -fx-background-color:transparent;
+}
